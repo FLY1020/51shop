@@ -1,0 +1,423 @@
+#box {
+    position: relative;
+    width: 100%;
+    height: 455px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#box .list {
+    position: relative;
+    height: 455px;
+}
+
+@media only screen and (min-width: 1450px) {
+    #box .list li {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        margin-top: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    #box .count {
+        position: absolute;
+        left: 900px;
+        bottom: 5px;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1450px) {
+    #box .list li {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        margin-top: 0px;
+        position: absolute;
+        top: 0;
+        left: -100px;
+        bottom: 0;
+        right: 0;
+    }
+
+    #box .list li img {
+        width: 120%;
+    }
+
+    #box .count {
+        position: absolute;
+        left: 700px;
+        bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #box {
+        display: none;
+    }
+
+}
+
+#box .list li.current {
+    opacity: 1;
+}
+
+#box .count li {
+    color: #fff;
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    overflow: hidden;
+    background: #6D6B6A;
+    opacity: 0.7;
+    border-radius: 20px;
+    padding-left: 5px;
+}
+
+#box .count li.current {
+    color: #fff;
+    opacity: 0.7;
+    font-weight: 700;
+    background: #f60
+}
+
+/* 商品分类 */
+.jnCatainfo {
+    border: 2px solid #f06565;
+    border-style: none solid solid;
+    border-width:2px;
+    height: 524px;
+    overflow: hidden;
+    padding: 5px 10px 0;
+    width: 220px;
+}
+
+.jnCatainfo h3 {
+    border-bottom: 2px solid #f06565;
+    height: 24px;
+    line-height: 24px;
+    background-color: #f06565;
+    color: #fff;
+    width: 164px;
+}
+
+.jnCatainfo ul {
+    float: left;
+    padding: 0 2px 8px;
+}
+
+.jnCatainfo li {
+    color: #AEADAE;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    width: 79px;
+    overflow: hidden;
+    position: relative;
+}
+
+.jnCatainfo li a {
+    color: #444444;
+}
+
+.jnCatainfo li a:hover {
+    color: #008CD7;
+    text-decoration: none;
+}
+
+/* 大屏广告 */
+#jnImageroll {
+    float: left;
+    height: 320px;
+    margin: 0 11px 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+}
+
+#jnImageroll img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#jnImageroll div {
+    bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    float: left;
+}
+
+#jnImageroll div a {
+    background-color: skyblue;
+    color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    height: 32px;
+    margin-right: 1px;
+    overflow: hidden;
+    padding: 5px 15px;
+    text-align: center;
+    width: 79px;
+}
+
+#jnImageroll div a:hover {
+    text-decoration: none;
+}
+
+#jnImageroll div a em {
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    width: 79px;
+}
+
+#jnImageroll .last {
+    margin: 0;
+    width: 80px;
+}
+
+/*轮播图  */
+#container {
+  
+    width: 940px;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.item {
+    position: absolute;
+    left:240px;
+  top:40px;
+}
+
+#tabs {
+    position: absolute;
+    right: 300px;
+    bottom: 80px;
+}
+
+.tab {
+    float: left;
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    border: 3px solid rgba(184, 178, 182, .8);
+    border-radius: 50%;
+    background: #989196;
+    cursor: pointer;
+}
+
+.active {
+    background: #fff;
+    border-color: #999497;
+}
+
+
+
+.btn:hover {
+    background: rgba(127, 120, 125, 0.8);
+}
+
+.prev {
+    position: absolute;
+    left: 235px;
+    border-radius: 0 5px 5px 0;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+#bt_ruanpo{
+	position:absolute;
+	top:50%;
+	margin-top:-35px;
+	width:40px;
+	height:70px;
+	color:#d6d3d5;
+	font-size:36px;
+	line-height:70px;
+	text-align:center;
+	cursor:pointer;
+}
+
+
+
+#container .dd_class{
+    width: 600px;
+    height: 380px;
+    background-color: white;
+    border:1px solid red;
+    position: absolute;
+    top:20px;
+    left:220px;
+    z-index:4;
+}
+
+
+
+
+#container em {
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    font-style: normal;
+    height:20px;
+    line-height: 14px;
+    margin: 5px 0;
+    padding: 0 8px;
+    margin-top: 24px;
+}
+
+#container em a {
+    color: #666666;
+    white-space: nowrap;
+	font-size:14px;
+	font-weight:normal;
+	padding:0;
+}
+
+
+#container #dd_title em a {
+    color: aliceblue;
+    white-space: nowrap;
+	font-size:18px;
+    font-weight:normal;
+    background: slategrey;
+	padding:0;
+}
+
+.dagang_list_w{  
+  position: fixed; 
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 111111;
+  background: #fff;
+}
+.exit{
+width: 1.3rem;
+  margin-top: 0.46875rem;
+  margin-left: 0.46875rem;
+  line-height: 0.7812rem;
+  text-align: center;
+  background: #ccc;
+  color: #333;
+  font-size: 0.3rem;
+  margin-bottom: 0.46875rem;
+ 
+}
+ 
+.concent_wrap{
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #dedede;
+}
+.dg_all_tittle{
+  font-size: 0.593634rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+}
+ 
+ 
+.concent{
+    width: 100%;
+    overflow: auto;
+    height: 14rem;
+    /* background: #ccc; */
+    box-shadow: 0px 5px 20px 5px #ccc;
+ 
+}
+.one{
+  font-size:0.5627rem;
+  font-weight: bold;
+}
+.two{
+  font-size: 0.46875rem;
+  line-height: 0.7812rem;
+}
+
+/* 商品显示 */
+.shopMainbg .procd{
+    width: 1200px;
+    height: 100%;
+    margin:0 auto;
+
+}
+
+/* 一件商品的css */
+.pro_one{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: solid 1px rgba(184, 178, 182, .8);
+}
+
+#pro_mony{
+    font-size: 26px;
+    color: rgb(211, 77, 77);
+}
+
+#pro_baoyou{
+    margin-left: 10px;
+    font-size: 22px;
+    color: red;
+}
+ /* .pro_img{
+    width: 200px;
+    height: 100px;
+} */
+
+.pro_img img{
+    width: 200px;
+    height: 200px;
+} 
+
+.pro_payers{
+    
+    margin-left: 50px;
+}
+
+.pro_introduction{
+    
+    font-size: 12px;
+}
+.pro_cla_introduction{
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* 按钮 */
+.bt{
+    margin-top: 7px;
+    width: 200px;
+    height: 20px;
+}
+.bt input{
+    background-color: rgb(211, 77, 77);
+    color: seashell;
+}
+.pro_one .gouwu{
+    
+    margin-top: 10px;
+   margin-left: 40px;
+}

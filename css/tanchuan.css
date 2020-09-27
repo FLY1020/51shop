@@ -1,0 +1,13 @@
+.divShow{line-height:32px;height:32px;background-color:#eee;width:280px;padding-left:10px}
+           .divShow span{padding-left:50px}
+           .dialog{width:360px;border:solid 5px #666;position:absolute;display:none;z-index:101}
+           .dialog .title{background-color:#fbaf15;padding:10px;color:#fff;font-weight:bold}
+           .dialog .title img{float:right}
+           .dialog .content{background-color:#fff;padding:25px;height:60px}
+           .dialog .content img{float:left}
+           .dialog .content span{float:left;padding-top:10px;padding-left:10px}
+           .dialog .bottom{text-align:right;padding:10px 10px 10px 0px;background-color:#eee}
+           .mask {width:100%;height:100%; background-color:rgba(0,0,0,0.4);position:absolute;
+                  top:0px;left:0px;display:none;z-index:100}
+           .btn {border:#666 1px solid;padding:2px;width:65px;
+           filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff, EndColorStr=#ECE9D8);}
